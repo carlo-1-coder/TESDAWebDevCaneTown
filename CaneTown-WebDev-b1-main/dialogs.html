@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Dialogs</title>
+  <style>
+    .toast{
+    background-color: #fff;
+    color: pink;
+    }
+    </style>
+</head>
+<body class="grey">
+  <div class="container">
+    <h1>Dialogs</h1>
+    <a onclick="M.toast({
+      html: 'I am a toast', 
+      outDuration: 10000, 
+      classes: 'rounded'
+      })" class="btn red">Toast!
+    </a>
+
+    <a class="btn" onclick="M.toast({
+      html: 'I am a toast', 
+      completeCallback: function(){
+        console.log('Your toast was dismissed')
+        }})">Toast with callback!
+    </a>
+
+    <br><br>
+    <a class="btn tooltipped deep-orange waves-effect waves-light" data-position="bottom" data-tooltip="Web Development">Hover me!</a>
+    <a class="btn tooltipped waves-effect waves-light red" data-position="Top" data-tooltip="Web Development">Hover me!</a>
+    <a class="btn tooltipped deep-purple waves-effect waves-light" data-position="left" data-tooltip="Web Development">Hover me!</a>
+    <a class="btn tooltipped amber waves-effect waves-light" data-position="right" data-tooltip="Web Development">Hover me!</a>
+  </div>
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.tooltipped').tooltip({
+        enterDelay: 5000,
+        margin: 30
+      });
+    })
+  </script>
+</body>
+</html>

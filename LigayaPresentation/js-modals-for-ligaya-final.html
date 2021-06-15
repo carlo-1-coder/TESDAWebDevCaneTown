@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/2217811f32.js" crossorigin="anonymous"></script>
+  <!-- Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <title>JavaScript - Modals</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Modal Options and Methods</h1>
+
+    <!-- Modal 1: Basic Modal-->
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal 1</a>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal 1: Basic Modal</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius iste unde corrupti, vitae, quia molestiae laudantium odio eaque optio accusantium debitis error incidunt, ipsa porro sequi numquam magni voluptatem!</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green green btn-flat">Agree</a>
+        </div>
+      </div>
+
+    <!-- Modal 2: Modal with Fixed Footer -->
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger yellow black-text" href="#modal2">Modal 2</a>
+        
+        <!-- Modal Structure -->
+        <div id="modal2" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Modal 2: Basic Modal with Fixed Footer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo expedita est debitis, blanditiis hic quae voluptatibus vero quasi sapiente cum ea explicabo sed fugiat, odit mollitia corporis doloremque! Molestiae!</p>
+            <p>Voluptatem nihil a error exercitationem beatae? Totam ducimus ipsum cumque? Atque minima tempore eum suscipit reiciendis ipsum aperiam reprehenderit! Aspernatur dolor cumque dolores nulla perspiciatis commodi ut sunt est eligendi!</p>
+            <p>Nihil eligendi error possimus molestiae? Assumenda esse, ipsum quasi nostrum excepturi sequi? Voluptate ea labore, totam aliquid aperiam amet ut. Aliquid ipsam sunt consequuntur iusto facilis quis dolorem minima totam.</p>
+            <p>Molestias tempora eveniet tenetur quasi laboriosam cum praesentium expedita assumenda id? Qui illo totam, sit accusantium, ad sequi magni quia ullam quasi debitis cupiditate fugit ipsum eaque, omnis nemo autem.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sequi nostrum commodi. Earum voluptatem consectetur exercitationem, fuga soluta magni tenetur quas suscipit sequi deleniti provident numquam nulla harum eaque similique!</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green yellow btn-flat">Agree</a>
+          </div>
+        </div>
+
+    <!-- Bottom Sheet Modals -->
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger blue" href="#modal3">Modal 3</a>
+
+      <!-- Modal Structure -->
+      <div id="modal3" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Modal 3: Bottom Sheet Modal</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur magni deleniti, accusamus, fugit sit provident dolor, neque repellat porro odio voluptate assumenda! Nobis autem ipsum ut animi quia. Atque?</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green red btn-flat">Agree</a>
+        </div>
+      </div>
+
+    <!-- Bottom Sheet Modal with Collection -->
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger red" href="#modal4">Modal 4</a>
+
+      <!-- Modal Structure -->
+      <div id="modal4" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Modal 4: Bottom Sheet Modal with Collection</h4>
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <img src="images/nezuko2.jpg" alt="" class="circle">
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle">folder</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">insert_chart</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle red">play_arrow</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul> Nobis autem ipsum ut animi quia. Atque?</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green red btn-flat">Agree</a>
+        </div>
+      </div>
+
+
+  <!-- So that the website can be scrolled down -->
+  <div style="height: 1000px;"></div>
+
+
+
+<!-- End of container -->
+  </div>
+
+<!-- Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Modal Initialization Script -->
+  <script>
+    $(document).ready(function(){
+      $('.modal').modal({
+        // Different types of modal options
+        // Format of desc: option name | value type | default value | description
+        // opacity | number | 0.5 | Opacity of the modal overlay. [can only accept 0 to 1]
+        opacity: 0.5,
+        // inDuration | number | 250 | Transition in duration [in milliseconds, e.g., 250ms = 0.25s,1000ms = 1s, 10000ms = 10s].
+        inDuration: 250,
+        // outDuration | number | 250 | Transition out duration [in milliseconds, e.g., 250ms = 0.25s,1000ms = 1s, 10000ms = 10s].
+        outDuration: 250,
+        // onOpenStart | Function | null | Callback function called before modal is opened.
+        // onOpenEnd | Function | null | Callback function called after modal is opened.
+        // onCloseStart | Function | null | Callback function called after modal is closed.
+        // onCloseEnd | Function | null | Callback function called after model is closed.
+        // preventScrolling | Boolean | true | Prevent page from scrolling while modal is open. [true or false only]
+        preventScrolling: true,
+        // dismissible | Boolean | true | Allow modal to be dismissed by keyboard or overlay click. [true or false only]
+        dismissible: true,
+        // startingTop | String | '4%' | Starting top offset ['0%' to '100%']
+        startingTop: '4%',
+        // endingTop | String | '10%' | Ending top offset ['0%' to '100%']
+        endingTop: '10%'
+      });
+      // Modal Methods
+      // $('.modal').modal('open'); 
+      // $('.modal').modal('close'); 
+      // $('.modal').modal('destroy'); 
+      
+      // Modal Methods one-by-one
+      // $('#modal1').modal('open'); 
+      // $('#modal2').modal('destroy'); 
+      // $('#modal3').modal('open'); 
+    });
+
+
+  </script>
+
+
+</body>
+</html>
